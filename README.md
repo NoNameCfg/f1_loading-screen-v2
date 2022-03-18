@@ -4,7 +4,8 @@
 https://www.youtube.com/watch?v=WNAh2Kwpt3E
 
 # How to install:
- Move folder load for folder resources and open server.cfg 
+ Move folder load for folder resources and open server.cfg
+ 
 ensure f1_loadingscreenv2
 
 # Credits 
