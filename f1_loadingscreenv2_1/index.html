@@ -1,0 +1,129 @@
+<html>
+    <head>
+    <title>ALMADA RP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+    <script type="text/javascript" src="js/text.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        <div id="main">
+                <header id="header">
+                    <h1>ALMADA RP</h1>
+                    <p>Welcome &nbsp;&bull;&nbsp; 100% Roleplay &nbsp;&bull;&nbsp; Have Fun</p>
+                    <nav>
+                        <ul>
+                            <li><a href="https://discord.me/almadarpdiscord" class="icon brands fa-discord" target="_blank" onclick="window.invokeNative('openUrl', 'https://discord.me/almadarpdiscord');"><span class="label">Discord</span></a></li>
+                            <li><a href="https://alrp.fun/" class="fa fa-window-maximize" target="_blank" onclick="window.invokeNative('openUrl', 'https://alrp.fun/');"><span class="label">Website</span></a></li>
+                            <li><a href="https://www.instagram.com/Almada_Roleplay/" class="icon brands fa-instagram" target="_blank" onclick="window.invokeNative('openUrl', 'https://www.instagram.com/Almada_Roleplay/');"><span class="label">Instagram</span></a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+		</div>
+        <video autoplay muted loop id="video">
+            <source src="video/video.mp4" type="video/mp4" width=1920 height=1080>
+          </video>
+        <img src="img/cursor.png" alt="cursor" id="cursor">
+
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+                <img src="img/music.png" width="30px" height="30px">
+                <span></span>
+            </label>
+
+        <ul class="menu__box">
+
+            <div id="app-cover">
+                <div id="player">
+                    <div id="player-track">
+                        <div id="album-name"></div>
+                        <div id="track-name"></div>
+                        <div id="track-time">
+                            <div id="current-time"></div>
+                            <div id="track-length"></div>
+                        </div>
+                        <div id="s-area">
+                            <div id="ins-time"></div>
+                            <div id="s-hover"></div>
+                            <div id="seek-bar"></div>
+                        </div>
+                    </div>
+                    <div id="player-content">
+                        <div id="album-art">
+                            <img src="https://images.genius.com/aeafd2c30ad7d3c7ef326f591983b5bc.1000x1000x1.png" class="active" id="_1">
+                            <img src="https://images.genius.com/6b36c989cd85083238af56e55a7a0f80.1000x1000x1.jpg" id="_2">
+                            <img src="https://static.getmatcha.com/image/upload/cl43dzyvpmr6twqcw8l4.jpg" id="_3">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/b/b9/Alicia_Keys_-_Empire_State_of_Mind.jpg/220px-Alicia_Keys_-_Empire_State_of_Mind.jpg" id="_4">
+                            <img src="https://static.wikia.nocookie.net/imaginedragons/images/f/fe/BirdsFlying.jpg/revision/latest?cb=20210627230856" id="_5">
+                            <div id="buffer-box">Loading ...</div>
+                        </div>
+                        <div id="player-controls">
+                            <div class="control">
+                                <div class="button" id="play-previous">
+                                    <i class="fas fa-backward"></i>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <div class="button" id="play-pause-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <div class="button" id="play-next">
+                                    <i class="fas fa-forward"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </ul>
+    </div>
+    <footer id="footer">
+        <span class="copyright">&copy; Loading screen by: <a href="https://github.com/NoNameCfg" target="_blank" onclick="window.invokeNative('openUrl', 'https://github.com/NoNameCfg');">F1YT2019</a>.</span>
+    </footer>
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+        window.ontouchmove = function() { return false; }
+        window.onorientationchange = function() { document.body.scrollTop = 0; }
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        function ffalse() {
+            return false;
+        }
+
+        function ftrue() {
+            return true;
+        }
+
+        document.onselectstart = new Function("return false");
+        if (window.sidebar) {
+            document.onmousedown = ffalse;
+            document.onclick = ftrue;
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).mousemove(function(e) {
+            $("#cursor").css({
+                left: e.pageX,
+                top: e.pageY
+            });
+        })
+    </script>
+</body>
+
+</html>
