@@ -13,6 +13,7 @@ files {
     'img/*',
     'img/*/*',
     'js/main.js',
+    'video/video.mp4',
 }
 
 loadscreen 'index.html'
