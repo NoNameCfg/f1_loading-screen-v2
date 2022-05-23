@@ -9,7 +9,7 @@ files {
     'index.html',
     'audio/*.mp3',
     'css/styles.css',
-    'video/*',
+    'video/*.mp4',
     'img/*',
     'img/*/*',
     'js/main.js',
